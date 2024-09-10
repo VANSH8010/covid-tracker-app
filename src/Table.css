@@ -1,0 +1,18 @@
+.table{
+    margin-top: 20px;
+    overflow: scroll;
+    height: 400px;
+    background-color: rgb(244, 239, 239);
+ }
+.table tr{
+    display: flex;
+    justify-content: space-between ;
+} 
+.table td{
+    padding: 0.5rem;
+    border: none;
+}
+/* this will used for check odd or even number  */
+.table tr:nth-of-type(odd){
+    background-color: yellow;
+}

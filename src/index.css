@@ -1,13 +1,50 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+   margin:0px;
+}
+.app_header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom:20px; 
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App_Box{
+  display:flex;
+  justify-content: space-between;
+}
+
+.App_left{
+  flex:0.9;
+}
+
+.App{
+  /* this is flexbox is used to set */
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+/* this will use to set in a column */
+@media (max-width: 900px) {
+  .App{
+    flex-direction: column;
+  }
+}
+.App_right{
+  display: flex;
+  flex-direction: column;
+}
+.App_right .MuiCardContent-root{
+  display: flex;
+   flex-direction: column; 
+   flex-grow: 1;
+}
+.App_graph{
+  flex-grow: 1;
+}
+.App_graphtitle{
+  margin-top: 20px;
+}
+.Header{
+  color: red;
 }
